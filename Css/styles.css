@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+html, body{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+}
+
+.main{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #063852;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 60%;
+    height: 100vh;
+    background-color: #011A27;
+    border-radius: 20px;
+    box-shadow: 0 0 5px #011A27;
+}
+
+.head div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.head div i {
+    cursor: pointer;
+}
+.head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 15vh;
+    padding: 1.5vh 0;
+}
+.day {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+    padding: 1.5vh 0;
+    background-color: #063852;
+}
+
+.days {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+}
+.days .today {
+    background-color: #00131f;
+}
+
+.days .prevdays, .nextdays {
+    color: rgb(78, 77, 77);
+}
+
+.days div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 11.5vh;
+    font-weight: bold;
+    border-radius: 10px;
+}
